@@ -1,0 +1,41 @@
+[debug] [2018-07-07T19:43:05.934Z] ----------------------------------------------------------------------
+[debug] [2018-07-07T19:43:05.934Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vfaer\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-07-07T19:43:05.934Z] CLI Version:   3.19.0
+[debug] [2018-07-07T19:43:05.934Z] Platform:      win32
+[debug] [2018-07-07T19:43:05.934Z] Node Version:  v8.11.2
+[debug] [2018-07-07T19:43:05.934Z] Time:          Sat Jul 07 2018 21:43:05 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:05.934Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-07T19:43:05.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-07T19:43:05.950Z] > authorizing via signed-in user
+[debug] [2018-07-07T19:43:05.950Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-07T19:43:05.950Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/GfB2Uy81vHZX2ZFvwIiBl3_T1APWiY8mzS_tN5rdyvk',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jul 07 2018 21:43:05 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:06.075Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T19:43:06.091Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-manfri2  
+  
+ Sat Jul 07 2018 21:43:06 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:06.872Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T19:43:06.872Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-manfri2/tokens  
+  
+ Sat Jul 07 2018 21:43:06 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:07.560Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-07T19:43:07.560Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pwa-manfri2  
+  
+ Sat Jul 07 2018 21:43:07 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:08.466Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\vfaer\pwa\pwa-kat'...
+[info] 
+[debug] [2018-07-07T19:43:08.481Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/560546008625/clients/_:getWebAppConfig  
+  
+ Sat Jul 07 2018 21:43:08 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-07T19:43:08.919Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: work
+[info] +  hosting: Local server: http://localhost:5000
+

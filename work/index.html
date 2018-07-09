@@ -67,38 +67,41 @@
 
     <header class="header">
         <h1 class="header__title">KA Testdorf</h1>
-        <div id="htitle" hidden>ajax</div>
+        <div id="htitle">ajax</div>
         <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
         <button id="butAdd" class="headerButton" aria-label="Add" hidden></button>
         <button id="butSignOut" class="headerButton" hidden aria-label="SignOut" onclick="mySignOut() "></button>
-        <button id="butAjax" class="headerButton" hidden aria-label="Ajax"></button>
+        <button id="butAjax" class="headerButton"  aria-label="Ajax"></button>
     </header>
 
     <main class="main">
+        <ul id="parentList">          
+        </ul>
         <div class="card cardTemplate weather-forecast" hidden>
             <div class="city-key" hidden></div>
             <div class="card-last-updated" hidden></div>
             <div class="location"></div>
-            <div class="date"></div>
+            <div id="date"></div>
             <div id="decsrid" class="description"></div>
             <a href="https://amelblob.blob.core.windows.net/documentscontainer/amelblob/01 Ansicht NSHV KA Clp.pdf" target="_blank">click</a>
+
             <div class="current">
                 <!--<div class="visual">
-                    <div class="icon"></div>
-                    <div class="temperature">
-                        <span class="value"></span><span class="scale">F</span>
-                    </div>
-                </div>-->
+                <div class="icon"></div>
+                <div class="temperature">
+                    <span class="value"></span><span class="scale">F</span>
+                </div>
+            </div>-->
                 <!--<div class="description">
-                    <div class="humidity"></div>
-                    <div class="wind">
-                        <span class="value"></span>
-                        <span class="scale">mph</span>
-                        <span class="direction"></span>
-                    </div>
-                    <div class="sunrise"></div>
-                    <div class="sunset"></div>
-                </div>-->
+                <div class="humidity"></div>
+                <div class="wind">
+                    <span class="value"></span>
+                    <span class="scale">mph</span>
+                    <span class="direction"></span>
+                </div>
+                <div class="sunrise"></div>
+                <div class="sunset"></div>
+            </div>-->
             </div>
             <div class="future">
                 <div class="oneday">

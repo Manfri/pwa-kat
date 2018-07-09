@@ -66,11 +66,30 @@
             type: "GET",
             success: function (response) {
                 var obj = JSON.parse(JSON.stringify(response));
-                document.getElementById("htitle").innerHTML = obj.documents[0].fields.projekt.integerValue;
+                //var ul = $('<ul>').appendTo('body');
+                ////var json = { items: ['item 1', 'item 2', 'item 3'] };
+                //$(obj.documents).each(function (index, item) {
+                //    ul.append(
+                //        $(document.createElement('li')).text(item.fields.projekt.integerValue)
+                //    );
+                //});
+                $(obj.documents).each(function (i, item) {
+                    $("#parentList").append( 
+                        '<li id="' + item.fields.projekt.integerValue +
+                        '">' + item.fields.projekt.integerValue + '</li>');
+                });
+
+                //document.getElementById("mylist").innerHTML = obj.documents[0].fields.projekt.integerValue;
             }
         });
     });
-
+    document.getElementById("parentList").addEventListener("click", function (e) {
+        // e.target is our targetted element.
+        // try doing console.log(e.target.nodeName), it will result LI
+        if (e.target && e.target.nodeName == "LI") {
+            console.log(e.target.id + " was clicked");
+        }
+    });
     /*****************************************************************************
     make refresh
      ****************************************************************************/
